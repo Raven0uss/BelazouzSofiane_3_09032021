@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+html {
+  font-family: "Roboto", sans-serif; }
+
+body {
+  margin: 0 auto; }
+
+main {
+  max-width: 600px;
+  margin: 0 auto; }
+
+header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  box-shadow: 0px 2px 2px #bbbbbb;
+  background-color: #fff;
+  z-index: 10; }
+  header #logo {
+    height: 24px;
+    width: auto;
+    margin-top: 10px; }
+
+#location-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #e2e2e2;
+  height: 48px;
+  color: #313131; }
+  #location-container i {
+    font-size: 16px; }
+  #location-container #location-text {
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 500; }
+
+#booking-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  z-index: 5;
+  background-color: #f5f5f5;
+  box-shadow: 0px -1px 1px #f5f5f5;
+  padding: 8px 24px; }
+  #booking-container h3 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #000;
+    padding: 0px 62px; }
+  #booking-container #booking-subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    color: #000; }
+  #booking-container button {
+    transition-duration: 300ms;
+    cursor: pointer;
+    box-shadow: -1px 3px 4px #8a8a8a78;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ff79da, #9356dc);
+    color: #fff;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 36px;
+    font-size: 14px; }
+    #booking-container button:hover {
+      box-shadow: 0px 3px 3px #8a8a8a; }
+    #booking-container button:hover {
+      background: linear-gradient(90deg, #fb9be0, #a87cdd); }
+
+@media screen and (max-width: 320px) {
+  #booking-container {
+    padding: 8px 20px; }
+    #booking-container h3 {
+      padding: 0px 52px; } }
+#operation-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 12px 0px;
+  background-color: #fff;
+  margin-bottom: 32px; }
+  #operation-container h4 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #000;
+    margin-right: auto;
+    margin-left: 18px; }
+  #operation-container .operation-step {
+    box-shadow: -1px 3px 4px #8a8a8a78;
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 60px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 16px;
+    margin: 8px 0px; }
+    #operation-container .operation-step .operation-badge-counter {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: -10px;
+      align-self: center;
+      width: 22px;
+      height: 22px;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 600;
+      background-color: #9356dc;
+      border-radius: 12px; }
+    #operation-container .operation-step .operation-step-content {
+      display: flex;
+      flex: 1; }
+      #operation-container .operation-step .operation-step-content i {
+        margin-left: 20px;
+        color: #747474; }
+      #operation-container .operation-step .operation-step-content .operation-step-text {
+        margin-left: 20px;
+        font-size: 14px;
+        font-weight: 600; }
+  #operation-container .operation-last-step {
+    background-color: #f7def3; }
+    #operation-container .operation-last-step .operation-step-content i {
+      color: #9356dc; }
+
+#restaurants-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 12px 0px;
+  background-color: #f5f5f5; }
+  #restaurants-container h4 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #000;
+    margin-right: auto;
+    margin-left: 18px; }
+  #restaurants-container .card-restaurant {
+    display: flex;
+    transition-duration: 300ms;
+    cursor: pointer;
+    box-shadow: -1px 3px 4px #8a8a8a78;
+    height: 220px;
+    width: 85%;
+    background-color: #fff;
+    border: none;
+    border-radius: 12px;
+    margin: 0px 16px; }
+    #restaurants-container .card-restaurant:hover {
+      box-shadow: 0px 3px 3px #8a8a8a; }
+    #restaurants-container .card-restaurant a {
+      width: 100%;
+      height: 100%; }
+      #restaurants-container .card-restaurant a img {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px; }
+      #restaurants-container .card-restaurant a .card-informations {
+        display: flex;
+        flex: 1;
+        margin: 0;
+        margin-top: -4px;
+        height: calc(220px - 70%); }
+        #restaurants-container .card-restaurant a .card-informations .card-restaurant-content {
+          display: inline-flex;
+          flex-direction: column;
+          justify-content: center; }
+          #restaurants-container .card-restaurant a .card-informations .card-restaurant-content h5 {
+            font-size: 14px;
+            font-weight: 900;
+            color: #000;
+            margin: 0;
+            text-align: left;
+            margin-left: 12px; }
+          #restaurants-container .card-restaurant a .card-informations .card-restaurant-content .card-restaurant-location {
+            font-size: 14px;
+            text-align: left;
+            margin-left: 12px;
+            margin-top: 4px;
+            font-weight: 300; }
+        #restaurants-container .card-restaurant a .card-informations i {
+          align-self: center;
+          margin-left: auto;
+          margin-right: 12px;
+          font-size: 24px;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: black;
+          -webkit-text-fill-color: white;
+          opacity: 1; }
+          #restaurants-container .card-restaurant a .card-informations i:hover {
+            -webkit-text-stroke-color: #ff79da;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; }
+          #restaurants-container .card-restaurant a .card-informations i::after {
+            content: "\f004";
+            background: linear-gradient(#ff79da, #9356dc);
+            background-clip: text;
+            -webkit-background-clip: text;
+            position: absolute;
+            margin-left: -24px;
+            opacity: 0; }
+          #restaurants-container .card-restaurant a .card-informations i:hover::after {
+            transition-property: opacity;
+            transition-duration: 0.6s;
+            transition-timing-function: ease-in;
+            opacity: 1; }
+    #restaurants-container .card-restaurant:hover {
+      opacity: 0.9; }
+
+/*# sourceMappingURL=style.css.map */
