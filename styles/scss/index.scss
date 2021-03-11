@@ -38,6 +38,11 @@
     color: #000;
   }
 
+  a {
+    margin-top: 24px;
+    margin-bottom: 36px;
+  }
+  
   button {
     @include boxShadowClickable;
     padding: 14px 18px;
@@ -46,8 +51,6 @@
     background: linear-gradient(135deg, $primaryColor, $secondaryColor);
     color: #fff;
     font-weight: 500;
-    margin-top: 24px;
-    margin-bottom: 36px;
     font-size: 14px;
     &:hover {
       background: linear-gradient(
@@ -134,6 +137,7 @@
   flex-direction: column;
   padding: 12px 0px;
   background-color: $lightGrey;
+  padding-bottom: 42px;
 
   h4 {
     @include indexTitle;

@@ -14,11 +14,13 @@
 
   <body>
     <header>
-      <img
-        src="ressources/images/logo/ohmyfood@2x.svg"
-        alt="OhMyFood"
-        id="logo"
-      />
+      <a href="index.html">
+        <img
+          src="ressources/images/logo/ohmyfood@2x.svg"
+          alt="OhMyFood"
+          id="logo"
+        />
+      </a>
     </header>
 
     <main>
@@ -33,7 +35,7 @@
         <span id="booking-subtitle">
           Découvrez des restaurants d'exceptions sélectionnés par nos soins.
         </span>
-        <button>Explorer nos restaurants</button>
+        <a href="#restaurants"><button>Explorer nos restaurants</button></a>
       </div>
       <!-- Operation container -->
       <div id="operation-container">
@@ -61,6 +63,7 @@
         </div>
       </div>
       <!-- Operation container -->
+      <span id="restaurants"></span>
       <div id="restaurants-container">
         <h4>Restaurants</h4>
         <div class="card-restaurant">
@@ -111,7 +114,7 @@
           </a>
         </div>
         <div class="card-restaurant">
-          <a>
+          <a href="pages/delicious.html">
             <img
               src="./ressources/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
               alt="Le délice des sens"
@@ -128,6 +131,24 @@
       </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <span id="footer-logo">ohmyfood</span>
+      <span class="footer-text bold-footer-text"
+        ><a href="#"
+          ><i class="fas fa-utensils"></i>Proposer un restaurant</a
+        ></span
+      >
+      <span class="footer-text bold-footer-text"
+        ><a href="#"
+          ><i class="fas fa-hands-helping"></i>Devenir partenaire</a
+        ></span
+      >
+      <span class="footer-text"><a href="#">Mentions légales</a></span>
+      <span class="footer-text"
+        ><a href="mailto:contact@ohmyfood.fr" alt="contact@ohmyfood.fr"
+          >Contact</a
+        ></span
+      >
+    </footer>
   </body>
 </html>
