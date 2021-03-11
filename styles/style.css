@@ -13,7 +13,7 @@ a {
   text-decoration: none;
   color: inherit; }
 
-header {
+#header-index {
   display: flex;
   position: relative;
   justify-content: center;
@@ -22,10 +22,33 @@ header {
   box-shadow: 0px 2px 2px #bbbbbb;
   background-color: #fff;
   z-index: 10; }
-  header #logo {
+  #header-index #logo {
     margin-top: 10px;
     height: 24px;
     width: auto; }
+
+.header-pages {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 50px;
+  box-shadow: 0px 2px 2px #bbbbbb;
+  background-color: #fff;
+  z-index: 10; }
+  .header-pages a {
+    margin-top: 10px; }
+    .header-pages a i {
+      margin-left: 24px;
+      font-size: 18px; }
+  .header-pages #logo {
+    position: absolute;
+    margin-top: 10px;
+    height: 24px;
+    width: auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto; }
 
 footer {
   display: flex;
@@ -128,7 +151,7 @@ footer {
     box-shadow: -1px 3px 4px #8a8a8a78;
     display: flex;
     align-items: center;
-    width: 85%;
+    width: calc(100% - 48px);
     height: 60px;
     background-color: #f5f5f5;
     border: none;
@@ -184,7 +207,7 @@ footer {
     cursor: pointer;
     box-shadow: -1px 3px 4px #8a8a8a78;
     height: 220px;
-    width: 85%;
+    width: calc(100% - 36px);
     background-color: #fff;
     border: none;
     border-radius: 12px;

@@ -42,7 +42,7 @@
     margin-top: 24px;
     margin-bottom: 36px;
   }
-  
+
   button {
     @include boxShadowClickable;
     padding: 14px 18px;
@@ -86,7 +86,7 @@
     @include boxShadow;
     display: flex;
     align-items: center;
-    width: 85%;
+    width: calc(100% - 48px);
     height: 60px;
     background-color: $lightGrey;
     border: none;
@@ -147,7 +147,7 @@
     display: flex;
     @include boxShadowClickable;
     height: 220px;
-    width: 85%;
+    width: calc(100% - 36px);
     background-color: #fff;
     border: none;
     border-radius: 12px;

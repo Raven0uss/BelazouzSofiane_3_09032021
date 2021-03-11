@@ -1,4 +1,4 @@
-header {
+#header-index {
   display: flex;
   position: relative;
   justify-content: center;
@@ -12,5 +12,34 @@ header {
     margin-top: 10px;
     height: 24px;
     width: auto;
+  }
+}
+
+.header-pages {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 50px;
+  box-shadow: 0px 2px 2px #bbbbbb;
+  background-color: #fff;
+  z-index: 10;
+
+  a {
+    margin-top: 10px;
+    i {
+      margin-left: 24px;
+      font-size: 18px;
+    }
+  }
+
+  #logo {
+    position: absolute;
+    margin-top: 10px;
+    height: 24px;
+    width: auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
