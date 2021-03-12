@@ -265,8 +265,9 @@ footer {
           font-size: 24px;
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: black;
-          -webkit-text-fill-color: white;
-          opacity: 1; }
+          -webkit-text-fill-color: #fff;
+          opacity: 1;
+          cursor: pointer; }
           #restaurants-container .card-restaurant a .card-informations i:hover {
             -webkit-text-stroke-color: #ff79da;
             background-clip: text;
@@ -287,5 +288,91 @@ footer {
             opacity: 1; }
     #restaurants-container .card-restaurant:hover {
       opacity: 0.9; }
+
+.menu-heading-container {
+  display: flex;
+  width: 100%; }
+  .menu-heading-container img {
+    width: 100%;
+    height: auto;
+    max-width: 600px; }
+
+.menu-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f5f5f5;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  margin-top: -50px;
+  z-index: 5; }
+  .menu-container .menu-container-head {
+    display: flex;
+    margin-top: 12px; }
+    .menu-container .menu-container-head h2 {
+      font-size: 22px;
+      font-family: "Shrikhand", "sans-serif";
+      margin-left: 18px; }
+    .menu-container .menu-container-head i {
+      align-self: center;
+      margin-left: auto;
+      margin-right: 32px;
+      margin-top: -4px;
+      font-size: 24px;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      -webkit-text-fill-color: #f5f5f5;
+      opacity: 1;
+      cursor: pointer; }
+      .menu-container .menu-container-head i:hover {
+        -webkit-text-stroke-color: #ff79da;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      .menu-container .menu-container-head i::after {
+        content: "\f004";
+        background: linear-gradient(#ff79da, #9356dc);
+        background-clip: text;
+        -webkit-background-clip: text;
+        position: absolute;
+        margin-left: -24px;
+        opacity: 0; }
+      .menu-container .menu-container-head i:hover::after {
+        transition-property: opacity;
+        transition-duration: 0.6s;
+        transition-timing-function: ease-in;
+        opacity: 1; }
+  .menu-container .menu-category {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0px; }
+    .menu-container .menu-category .menu-category-title {
+      font-weight: 300;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-left: 18px; }
+    .menu-container .menu-category .menu-category-title-underline {
+      height: 3px;
+      width: 34px;
+      margin-top: 5px;
+      margin-left: 18px;
+      background-color: #99e2d0; }
+    .menu-container .menu-category .menu-category-list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center; }
+      .menu-container .menu-category .menu-category-list .menu-category-element {
+        transition-duration: 300ms;
+        cursor: pointer;
+        box-shadow: -1px 3px 4px #8a8a8a78;
+        width: calc(100% - 36px);
+        margin: 8px 0;
+        height: 54px;
+        background-color: #fff;
+        border-radius: 10px; }
+        .menu-container .menu-category .menu-category-list .menu-category-element:hover {
+          box-shadow: 0px 3px 3px #8a8a8a; }
 
 /*# sourceMappingURL=style.css.map */

@@ -40,3 +40,44 @@
   margin-right: auto;
   margin-left: 18px;
 }
+
+@mixin menuTitle {
+  font-size: 22px;
+  font-family: "Shrikhand", "sans-serif";
+}
+
+// Animations
+
+@mixin heartAnimation($marginRight, $marginTop, $backgroundOrigin: #fff) {
+  align-self: center;
+  margin-left: auto;
+  margin-right: $marginRight;
+  margin-top: $marginTop;
+  font-size: 24px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: $backgroundOrigin;
+  opacity: 1;
+  cursor: pointer;
+  &:hover {
+    -webkit-text-stroke-color: $primaryColor;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &::after {
+    content: "\f004";
+    background: linear-gradient(#ff79da, #9356dc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: absolute;
+    margin-left: -24px;
+    opacity: 0;
+  }
+  &:hover::after {
+    transition-property: opacity;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in;
+    opacity: 1;
+  }
+}

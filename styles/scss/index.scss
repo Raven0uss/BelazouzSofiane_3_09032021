@@ -202,36 +202,7 @@
           }
         }
         i {
-          align-self: center;
-          margin-left: auto;
-          margin-right: 24px;
-          margin-top: -12px;
-          font-size: 24px;
-          -webkit-text-stroke-width: 1px;
-          -webkit-text-stroke-color: black;
-          -webkit-text-fill-color: white;
-          opacity: 1;
-          &:hover {
-            -webkit-text-stroke-color: $primaryColor;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
-          &::after {
-            content: "\f004";
-            background: linear-gradient(#ff79da, #9356dc);
-            background-clip: text;
-            -webkit-background-clip: text;
-            position: absolute;
-            margin-left: -24px;
-            opacity: 0;
-          }
-          &:hover::after {
-            transition-property: opacity;
-            transition-duration: 0.6s;
-            transition-timing-function: ease-in;
-            opacity: 1;
-          }
+          @include heartAnimation(24px, -12px);
         }
       }
     }

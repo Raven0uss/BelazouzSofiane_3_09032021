@@ -1,0 +1,70 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.menu-heading-container {
+  display: flex;
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+  }
+}
+
+.menu-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  background-color: $lightGrey;
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  margin-top: -50px;
+  z-index: 5;
+
+  .menu-container-head {
+    display: flex;
+    margin-top: 12px;
+    h2 {
+      @include menuTitle;
+      margin-left: 18px;
+    }
+    i {
+      @include heartAnimation(32px, -4px, $lightGrey);
+    }
+  }
+
+  .menu-category {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0px;
+
+    .menu-category-title {
+      font-weight: 300;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-left: 18px;
+    }
+    .menu-category-title-underline {
+      height: 3px;
+      width: 34px;
+      margin-top: 5px;
+      margin-left: 18px;
+      background-color: $tertiaryColor;
+    }
+    .menu-category-list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      .menu-category-element {
+        @include boxShadowClickable;
+        width: calc(100% - 36px);
+        margin: 8px 0;
+        height: 54px;
+        background-color: #fff;
+        border-radius: 10px;
+      }
+    }
+  }
+}
