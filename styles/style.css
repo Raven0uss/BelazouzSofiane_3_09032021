@@ -111,9 +111,9 @@ footer {
     margin-top: 24px;
     margin-bottom: 36px; }
   #booking-container button {
+    box-shadow: -1px 3px 4px #8a8a8a78;
     transition-duration: 300ms;
     cursor: pointer;
-    box-shadow: -1px 3px 4px #8a8a8a78;
     padding: 14px 18px;
     border: none;
     border-radius: 20px;
@@ -203,9 +203,9 @@ footer {
     margin-left: 18px; }
   #restaurants-container .card-restaurant {
     display: flex;
+    box-shadow: -1px 3px 4px #8a8a8a78;
     transition-duration: 300ms;
     cursor: pointer;
-    box-shadow: -1px 3px 4px #8a8a8a78;
     height: 220px;
     width: calc(100% - 36px);
     background-color: #fff;
@@ -364,15 +364,54 @@ footer {
       width: 100%;
       align-items: center; }
       .menu-container .menu-category .menu-category-list .menu-category-element {
+        box-shadow: -1px 3px 4px #8a8a8a78;
         transition-duration: 300ms;
         cursor: pointer;
-        box-shadow: -1px 3px 4px #8a8a8a78;
+        display: flex;
         width: calc(100% - 36px);
         margin: 8px 0;
-        height: 54px;
+        height: 52px;
         background-color: #fff;
         border-radius: 10px; }
         .menu-container .menu-category .menu-category-list .menu-category-element:hover {
           box-shadow: 0px 3px 3px #8a8a8a; }
+        .menu-container .menu-category .menu-category-list .menu-category-element .menu-category-element-content {
+          display: flex;
+          flex-grow: 2;
+          height: 100%;
+          flex-direction: column;
+          margin: 0px 12px;
+          justify-content: space-evenly; }
+          .menu-container .menu-category .menu-category-list .menu-category-element .menu-category-element-content .menu-category-element-title {
+            font-size: 14px;
+            font-weight: 900;
+            color: #000;
+            margin-top: 2px; }
+          .menu-container .menu-category .menu-category-list .menu-category-element .menu-category-element-content .menu-category-element-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 12px;
+            margin-top: -4px; }
+            .menu-container .menu-category .menu-category-list .menu-category-element .menu-category-element-content .menu-category-element-footer .menu-category-element-subtitle {
+              color: #333333; }
+            .menu-container .menu-category .menu-category-list .menu-category-element .menu-category-element-content .menu-category-element-footer .menu-category-element-price {
+              font-weight: 700; }
+        .menu-container .menu-category .menu-category-list .menu-category-element .menu-category-element-selected {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          background-color: #6dc099;
+          width: 0px;
+          overflow: hidden;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          -webkit-transition: width 0.6s ease-in-out;
+          -moz-transition: width 0.6s ease-in-out;
+          -o-transition: width 0.6s ease-in-out;
+          transition: width 0.6s ease-in-out; }
+        .menu-container .menu-category .menu-category-list .menu-category-element:hover .menu-category-element-selected {
+          width: 42px; }
 
 /*# sourceMappingURL=style.css.map */
