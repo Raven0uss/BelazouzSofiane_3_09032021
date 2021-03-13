@@ -122,6 +122,13 @@
         &:hover {
           .menu-category-element-selected {
             width: 42px;
+            i {
+              -webkit-transition: transform 0.6s ease-in;
+              -moz-transition: transform 0.6s ease-in;
+              -o-transition: transform 0.6s ease-in;
+              transition: transform 0.6s ease-in;
+              transform: rotate(360deg);
+            }
           }
         }
       }

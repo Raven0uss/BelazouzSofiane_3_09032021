@@ -529,6 +529,12 @@ footer {
           transition: width 0.6s ease-in-out; }
         .menu-container .menu-category .menu-category-list .menu-category-element:hover .menu-category-element-selected {
           width: 42px; }
+          .menu-container .menu-category .menu-category-list .menu-category-element:hover .menu-category-element-selected i {
+            -webkit-transition: transform 0.6s ease-in;
+            -moz-transition: transform 0.6s ease-in;
+            -o-transition: transform 0.6s ease-in;
+            transition: transform 0.6s ease-in;
+            transform: rotate(360deg); }
   .menu-container button {
     align-self: center;
     margin-top: 24px;
