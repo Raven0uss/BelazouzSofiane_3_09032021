@@ -119,3 +119,32 @@
   animation-duration: 1.5s;
   animation-iteration-count: 1;
 }
+
+@keyframes disappear {
+  from {
+    visibility: visible;
+  }
+
+  to {
+    visibility: hidden;
+  }
+}
+
+@mixin disappear {
+  animation-name: disappear;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rotateSpinner {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@mixin rotateSpinner {
+  animation: rotateSpinner 1s infinite linear;
+};
