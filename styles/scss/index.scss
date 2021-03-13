@@ -245,3 +245,35 @@
     margin-bottom: 20px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  #restaurants-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    h4 {
+      width: 100%;
+    }
+    .card-restaurant {
+      width: calc(50% - 36px);
+      a {
+        position: relative;
+        .tag-new-restaurant {
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  #operation-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    h4 {
+      width: 100%;
+    }
+    .operation-step {
+      width: 30%;
+    }
+  }
+}

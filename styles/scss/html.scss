@@ -15,3 +15,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 1000px;
+  }
+}

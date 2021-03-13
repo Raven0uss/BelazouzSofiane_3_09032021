@@ -158,3 +158,36 @@
     border-radius: 34px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .menu-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .menu-container-head {
+      width: 100%;
+    }
+
+    .menu-category {
+      width: 50%;
+    }
+
+    button {
+      align-self: flex-end;
+      margin-left: auto;
+      margin-right: 36px;
+      margin-bottom: 18px;
+    }
+  }
+  .menu-heading-container {
+    img {
+      height: 280px;
+      width: 100%;
+      max-width: 1000px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 2px 2px 6px #333333;
+    }
+  }
+}
