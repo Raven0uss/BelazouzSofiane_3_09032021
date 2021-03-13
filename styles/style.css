@@ -309,9 +309,10 @@ footer {
   display: flex;
   width: 100%; }
   .menu-heading-container img {
+    height: 280px;
     width: 100%;
-    height: auto;
-    max-width: 600px; }
+    max-width: 600px;
+    object-fit: cover; }
 
 .menu-container {
   display: flex;
