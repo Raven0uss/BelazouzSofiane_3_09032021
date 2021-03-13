@@ -334,6 +334,22 @@ footer {
     border-top: 6px solid #ff79da;
     animation: rotateSpinner 1s infinite linear; }
 
+@media screen and (min-width: 620px) {
+  #location-container {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    left: 0;
+    margin-top: -70px; }
+
+  #booking-container {
+    position: relative;
+    margin-top: 70px;
+    border-radius: 16px; }
+
+  #restaurants-container {
+    border-radius: 16px;
+    margin-bottom: 20px; } }
 @keyframes fadeBottomToTop {
   from {
     opacity: 0;
@@ -507,5 +523,24 @@ footer {
     .menu-container button:hover {
       transition-duration: 300ms;
       background: linear-gradient(90deg, #fb9be0, #a87cdd); }
+
+@media screen and (min-width: 620px) {
+  .menu-heading-container {
+    display: flex;
+    width: 100%;
+    justify-content: center; }
+    .menu-heading-container img {
+      height: 380px;
+      width: 80%;
+      max-width: 600px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 2px 2px 6px #333333; }
+
+  .menu-container {
+    box-shadow: 2px 2px 6px #333333;
+    margin-bottom: 30px;
+    border-radius: 34px; } }
 
 /*# sourceMappingURL=style.css.map */

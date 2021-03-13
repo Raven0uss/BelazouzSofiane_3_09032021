@@ -135,3 +135,26 @@
     @include button(12px, 32px);
   }
 }
+
+@media screen and (min-width: 620px) {
+  .menu-heading-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    img {
+      height: 380px;
+      width: 80%;
+      max-width: 600px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 2px 2px 6px #333333;
+    }
+  }
+
+  .menu-container {
+    box-shadow: 2px 2px 6px #333333;
+    margin-bottom: 30px;
+    border-radius: 34px;
+  }
+}
