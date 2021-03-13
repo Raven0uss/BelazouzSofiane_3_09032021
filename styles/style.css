@@ -365,7 +365,8 @@ footer {
       #restaurants-container .card-restaurant a {
         position: relative; }
         #restaurants-container .card-restaurant a .tag-new-restaurant {
-          position: absolute; }
+          position: absolute;
+          margin-right: 12px; }
 
   #operation-container {
     flex-direction: row;
