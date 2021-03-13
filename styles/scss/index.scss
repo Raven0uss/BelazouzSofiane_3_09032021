@@ -44,21 +44,7 @@
   }
 
   button {
-    @include boxShadowClickable;
-    padding: 14px 18px;
-    border: none;
-    border-radius: 20px;
-    background: linear-gradient(135deg, $primaryColor, $secondaryColor);
-    color: #fff;
-    font-weight: 500;
-    font-size: 14px;
-    &:hover {
-      background: linear-gradient(
-        90deg,
-        $primaryColorLight,
-        $secondaryColorLight
-      );
-    }
+    @include button(14px, 18px);
   }
 }
 

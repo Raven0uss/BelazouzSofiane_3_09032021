@@ -70,6 +70,13 @@ footer {
   footer .bold-footer-text {
     font-weight: 500; }
 
+@keyframes fadeBottomToTop {
+  from {
+    opacity: 0;
+    margin-top: 100%; }
+  to {
+    opacity: 1;
+    margin-left: 0%; } }
 #location-container {
   display: flex;
   position: relative;
@@ -100,7 +107,7 @@ footer {
   padding: 8px 24px; }
   #booking-container h3 {
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 700;
     color: #000;
     padding: 0px 62px; }
   #booking-container #booking-subtitle {
@@ -111,19 +118,21 @@ footer {
     margin-top: 24px;
     margin-bottom: 36px; }
   #booking-container button {
+    cursor: pointer;
     box-shadow: -1px 3px 4px #8a8a8a78;
     transition-duration: 300ms;
     cursor: pointer;
-    padding: 14px 18px;
     border: none;
     border-radius: 20px;
     background: linear-gradient(135deg, #ff79da, #9356dc);
     color: #fff;
     font-weight: 500;
-    font-size: 14px; }
+    font-size: 14px;
+    padding: 14px 18px; }
     #booking-container button:hover {
       box-shadow: 0px 3px 3px #8a8a8a; }
     #booking-container button:hover {
+      transition-duration: 300ms;
       background: linear-gradient(90deg, #fb9be0, #a87cdd); }
 
 @media screen and (max-width: 320px) {
@@ -143,7 +152,7 @@ footer {
   margin-bottom: 32px; }
   #operation-container h4 {
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 700;
     color: #000;
     margin-right: auto;
     margin-left: 18px; }
@@ -197,7 +206,7 @@ footer {
   padding-bottom: 42px; }
   #restaurants-container h4 {
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 700;
     color: #000;
     margin-right: auto;
     margin-left: 18px; }
@@ -246,7 +255,7 @@ footer {
           justify-content: center; }
           #restaurants-container .card-restaurant a .card-informations .card-restaurant-content h5 {
             font-size: 14px;
-            font-weight: 900;
+            font-weight: 700;
             color: #000;
             margin: 0;
             text-align: left;
@@ -289,6 +298,13 @@ footer {
     #restaurants-container .card-restaurant:hover {
       opacity: 0.9; }
 
+@keyframes fadeBottomToTop {
+  from {
+    opacity: 0;
+    margin-top: 100%; }
+  to {
+    opacity: 1;
+    margin-left: 0%; } }
 .menu-heading-container {
   display: flex;
   width: 100%; }
@@ -367,6 +383,9 @@ footer {
         box-shadow: -1px 3px 4px #8a8a8a78;
         transition-duration: 300ms;
         cursor: pointer;
+        animation-name: fadeBottomToTop;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
         display: flex;
         width: calc(100% - 36px);
         margin: 8px 0;
@@ -381,13 +400,17 @@ footer {
           height: 100%;
           flex-direction: column;
           margin: 0px 12px;
-          justify-content: space-evenly; }
+          justify-content: space-evenly;
+          overflow: hidden; }
           .menu-container .menu-category .menu-category-list .menu-category-element .menu-category-element-content .menu-category-element-title {
             font-size: 14px;
-            font-weight: 900;
+            font-weight: 700;
             color: #000;
             font-weight: 600;
-            margin-top: 2px; }
+            margin-top: 2px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
           .menu-container .menu-category .menu-category-list .menu-category-element .menu-category-element-content .menu-category-element-footer {
             display: flex;
             flex-direction: row;
@@ -395,7 +418,10 @@ footer {
             font-size: 12px;
             margin-top: -4px; }
             .menu-container .menu-category .menu-category-list .menu-category-element .menu-category-element-content .menu-category-element-footer .menu-category-element-subtitle {
-              color: #333333; }
+              color: #333333;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis; }
             .menu-container .menu-category .menu-category-list .menu-category-element .menu-category-element-content .menu-category-element-footer .menu-category-element-price {
               font-weight: 700; }
         .menu-container .menu-category .menu-category-list .menu-category-element .menu-category-element-selected {
@@ -414,5 +440,25 @@ footer {
           transition: width 0.6s ease-in-out; }
         .menu-container .menu-category .menu-category-list .menu-category-element:hover .menu-category-element-selected {
           width: 42px; }
+  .menu-container button {
+    align-self: center;
+    margin-top: 24px;
+    margin-bottom: 58px;
+    cursor: pointer;
+    box-shadow: -1px 3px 4px #8a8a8a78;
+    transition-duration: 300ms;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ff79da, #9356dc);
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 12px 32px; }
+    .menu-container button:hover {
+      box-shadow: 0px 3px 3px #8a8a8a; }
+    .menu-container button:hover {
+      transition-duration: 300ms;
+      background: linear-gradient(90deg, #fb9be0, #a87cdd); }
 
 /*# sourceMappingURL=style.css.map */

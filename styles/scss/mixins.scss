@@ -25,13 +25,13 @@
 
 @mixin h3 {
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 700;
   color: #000;
 }
 
 @mixin h5 {
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 700;
   color: #000;
 }
 
@@ -47,6 +47,26 @@
 }
 
 // Animations
+
+@mixin button($verticalPadding, $horizontalPadding) {
+  cursor: pointer;
+  @include boxShadowClickable;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(135deg, $primaryColor, $secondaryColor);
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  padding: $verticalPadding $horizontalPadding;
+  &:hover {
+    transition-duration: 300ms;
+    background: linear-gradient(
+      90deg,
+      $primaryColorLight,
+      $secondaryColorLight
+    );
+  }
+}
 
 @mixin heartAnimation($marginRight, $marginTop, $backgroundOrigin: #fff) {
   align-self: center;
@@ -80,4 +100,22 @@
     transition-timing-function: ease-in;
     opacity: 1;
   }
+}
+
+@keyframes fadeBottomToTop {
+  from {
+    opacity: 0;
+    margin-top: 100%;
+  }
+
+  to {
+    opacity: 1;
+    margin-left: 0%;
+  }
+}
+
+@mixin fadeBottomToTop {
+  animation-name: fadeBottomToTop;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
 }

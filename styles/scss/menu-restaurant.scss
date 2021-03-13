@@ -59,6 +59,7 @@
       align-items: center;
       .menu-category-element {
         @include boxShadowClickable;
+        @include fadeBottomToTop;
         display: flex;
         width: calc(100% - 36px);
         margin: 8px 0;
@@ -73,11 +74,15 @@
           flex-direction: column;
           margin: 0px 12px;
           justify-content: space-evenly;
+          overflow: hidden;
 
           .menu-category-element-title {
             @include h5;
             font-weight: 600;
             margin-top: 2px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
           .menu-category-element-footer {
             display: flex;
@@ -87,6 +92,9 @@
             margin-top: -4px;
             .menu-category-element-subtitle {
               color: #333333;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
             }
             .menu-category-element-price {
               font-weight: 700;
@@ -117,5 +125,12 @@
         }
       }
     }
+  }
+
+  button {
+    align-self: center;
+    margin-top: 24px;
+    margin-bottom: 58px;
+    @include button(12px, 32px);
   }
 }
