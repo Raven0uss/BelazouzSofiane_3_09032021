@@ -128,9 +128,6 @@ footer {
     font-size: 16px;
     color: #000; }
   #booking-container a {
-    margin-top: 24px;
-    margin-bottom: 36px; }
-  #booking-container button {
     cursor: pointer;
     box-shadow: -1px 3px 4px #8a8a8a78;
     transition-duration: 300ms;
@@ -141,10 +138,12 @@ footer {
     color: #fff;
     font-weight: 500;
     font-size: 14px;
-    padding: 14px 18px; }
-    #booking-container button:hover {
+    padding: 14px 18px;
+    margin-top: 24px;
+    margin-bottom: 36px; }
+    #booking-container a:hover {
       box-shadow: 0px 3px 3px #8a8a8a; }
-    #booking-container button:hover {
+    #booking-container a:hover {
       transition-duration: 300ms;
       background: linear-gradient(90deg, #fb9be0, #a87cdd); }
 

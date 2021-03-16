@@ -39,12 +39,9 @@
   }
 
   a {
+    @include button(14px, 18px);
     margin-top: 24px;
     margin-bottom: 36px;
-  }
-
-  button {
-    @include button(14px, 18px);
   }
 }
 
