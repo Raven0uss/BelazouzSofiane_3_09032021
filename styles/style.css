@@ -249,7 +249,7 @@ footer {
         right: 0;
         margin-right: 38px;
         margin-top: 12px;
-        background-color: #82c47d;
+        background-color: #99e2d0;
         color: #15690f;
         border-radius: 2px;
         padding: 6px 12px;
@@ -291,13 +291,11 @@ footer {
           cursor: pointer; }
           #restaurants-container .card-restaurant a .card-informations i:hover {
             -webkit-text-stroke-color: #ff79da;
-            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent; }
           #restaurants-container .card-restaurant a .card-informations i::after {
             content: "\f004";
             background: linear-gradient(#ff79da, #9356dc);
-            background-clip: text;
             -webkit-background-clip: text;
             position: absolute;
             margin-left: -24px;
@@ -431,13 +429,11 @@ footer {
       cursor: pointer; }
       .menu-container .menu-container-head i:hover {
         -webkit-text-stroke-color: #ff79da;
-        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
       .menu-container .menu-container-head i::after {
         content: "\f004";
         background: linear-gradient(#ff79da, #9356dc);
-        background-clip: text;
         -webkit-background-clip: text;
         position: absolute;
         margin-left: -24px;
@@ -517,7 +513,7 @@ footer {
           align-items: center;
           justify-content: center;
           color: white;
-          background-color: #6dc099;
+          background-color: #99e2d0;
           width: 0px;
           overflow: hidden;
           border-top-right-radius: 10px;

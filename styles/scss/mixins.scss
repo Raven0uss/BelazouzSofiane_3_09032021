@@ -81,14 +81,12 @@
   cursor: pointer;
   &:hover {
     -webkit-text-stroke-color: $primaryColor;
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   &::after {
     content: "\f004";
     background: linear-gradient(#ff79da, #9356dc);
-    background-clip: text;
     -webkit-background-clip: text;
     position: absolute;
     margin-left: -24px;
